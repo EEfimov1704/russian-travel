@@ -1,5 +1,10 @@
+@import url(./__logo/header__logo.css);
+@import url(./__lang-link/header__lang-link.css);
+@import url(./__lang-link/__link-active/header__lang-link_active.css);
+
 .header {
     width: 100%;
+    max-width: 1184px;
     display: flex;
     justify-content: space-between;
     align-items: center;

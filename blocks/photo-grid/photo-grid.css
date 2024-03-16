@@ -1,7 +1,32 @@
+@import url(./__item/photo-grid__item.css);
+
 .photo-grid {
     max-width: 1184px;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     gap: 16px;
     margin-bottom: 92px;
+}
+
+@media screen and (max-width: 1024px) {
+    .photo-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 88px;        
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+        margin-bottom: 64px;
+        gap: 14px;
+    }
 }
